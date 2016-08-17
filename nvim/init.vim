@@ -26,4 +26,5 @@ Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/ctrlpvim/ctrlp.vim'
 Plug 'https://github.com/easymotion/vim-easymotion'
 Plug 'https://github.com/elixir-lang/vim-elixir'
+Plug 'https://github.com/lambdatoast/elm.vim'
 call plug#end()
