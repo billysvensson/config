@@ -167,6 +167,7 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym Print exec xfce4-screenshooter
 
 exec --no-startup-id nm-applet
+exec --no-startup-id volumeicon
 exec --no-startup-id compton -b
 
 for_window [class="Skype"] floating enable
