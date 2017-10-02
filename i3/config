@@ -155,8 +155,8 @@ bar {
         status_command i3status
 }
 
-bindsym $mod+Shift+q exec xrandr --output HDMI1 --off
-bindsym $mod+q exec xrandr --output HDMI1 --auto --right-of eDP1
+bindsym $mod+Shift+q exec xrandr --output DP1 --off
+bindsym $mod+q exec xrandr --output DP1 --auto --left-of eDP1
 
 bindsym $mod+Shift+s exec "i3lock -c 000000; sudo pm-suspend"
 
@@ -167,9 +167,11 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym Print exec xfce4-screenshooter
 
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id compton -b
 exec --no-startup-id gpg-agent --daemon
 
 for_window [class="Skype"] floating enable
+for_window [title="pinentry-gtk-2"] floating enable
 new_window pixel 3
